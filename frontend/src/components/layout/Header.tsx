@@ -7,7 +7,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-import { cn } from "@/lib/utils";
+import { CLUB, cn } from "@/lib/utils";
 
 const links = [
   { href: "/", label: "الرئيسية" },
@@ -28,12 +28,21 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-[rgba(201,162,39,0.15)] bg-[rgba(5,8,7,0.75)] backdrop-blur-xl">
       <div className="container-page flex h-16 items-center justify-between gap-3">
         <Link href="/" className="flex items-center gap-2.5 min-w-0">
-          <Image src="/logo.svg" alt="شعار عالم السنوكر" width={36} height={36} />
+          <Image
+            src="/logo.jpg"
+            alt={`${CLUB.name} — ${CLUB.nameEn}`}
+            width={44}
+            height={44}
+            className="rounded-full border border-[rgba(0,174,239,0.35)] shadow-[0_0_12px_rgba(0,174,239,0.25)] object-cover"
+            priority
+          />
           <div className="min-w-0">
             <p className="font-display text-lg leading-none gold-text truncate">
-              عالم السنوكر
+              {CLUB.name}
             </p>
-            <p className="text-[10px] text-[var(--muted)] mt-0.5">إربد · دوار السلطان</p>
+            <p className="text-[10px] text-[var(--muted)] mt-0.5 truncate">
+              {CLUB.nameEn} · {CLUB.locationShort}
+            </p>
           </div>
         </Link>
 

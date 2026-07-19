@@ -2,10 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "عالم السنوكر",
-    short_name: "السنوكر",
+    name: "عالم السنوكر — Snooker World",
+    short_name: "عالم السنوكر",
     description:
-      "نادي عالم السنوكر — إربد دوار السلطان. حجز طاولات، بطولات، وبث مباشر.",
+      "عالم السنوكر في إربد — الحي الشرقي شارع الهاشمي مقابل حلويات السلطان. مفتوح دائماً.",
     start_url: "/",
     display: "standalone",
     background_color: "#050807",
@@ -15,15 +15,15 @@ export default function manifest(): MetadataRoute.Manifest {
     orientation: "portrait-primary",
     icons: [
       {
-        src: "/logo.svg",
-        sizes: "any",
-        type: "image/svg+xml",
+        src: "/logo.jpg",
+        sizes: "720x720",
+        type: "image/jpeg",
         purpose: "any",
       },
       {
-        src: "/logo.svg",
+        src: "/logo.jpg",
         sizes: "192x192",
-        type: "image/svg+xml",
+        type: "image/jpeg",
         purpose: "maskable",
       },
     ],

@@ -43,11 +43,20 @@ class ClubSettings(models.Model):
     """Singleton club info editable from admin."""
 
     name = models.CharField(max_length=100, default="عالم السنوكر")
-    location = models.CharField(max_length=200, default="إربد - دوار السلطان")
-    whatsapp = models.CharField(max_length=20, default="962790000000")
-    opening_hours = models.CharField(max_length=100, default="10:00 ص — 2:00 ص")
-    about = models.TextField(blank=True)
-    facebook_url = models.URLField(blank=True)
+    location = models.CharField(
+        max_length=200,
+        default="الحي الشرقي، شارع الهاشمي / مقابل حلويات السلطان، إربد",
+    )
+    whatsapp = models.CharField(max_length=20, default="962790245899")
+    opening_hours = models.CharField(max_length=100, default="مفتوح دائماً")
+    about = models.TextField(
+        blank=True,
+        default="عالم السنوكر / Snooker World — نادي السنوكر والبلياردو في إربد.",
+    )
+    facebook_url = models.URLField(
+        blank=True,
+        default="https://www.facebook.com/profile.php?id=100062809076591",
+    )
     instagram_url = models.URLField(blank=True)
 
     class Meta:

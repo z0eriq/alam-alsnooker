@@ -60,9 +60,19 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
 
   const sidebar = (
     <aside className="flex flex-col h-full">
-      <div className="p-4 border-b border-[rgba(201,162,39,0.15)]">
-        <p className="font-display text-xl gold-text">عالم السنوكر</p>
-        <p className="text-xs text-[var(--muted)] mt-1">لوحة الإدارة</p>
+      <div className="p-4 border-b border-[rgba(201,162,39,0.15)] flex items-center gap-3">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/logo.jpg"
+          alt="عالم السنوكر"
+          width={40}
+          height={40}
+          className="rounded-full border border-[rgba(0,174,239,0.35)] object-cover"
+        />
+        <div>
+          <p className="font-display text-xl gold-text leading-none">عالم السنوكر</p>
+          <p className="text-xs text-[var(--muted)] mt-1">لوحة الإدارة</p>
+        </div>
       </div>
       <nav className="flex-1 p-3 space-y-1 overflow-y-auto scrollbar-thin">
         {NAV.map((item) => {

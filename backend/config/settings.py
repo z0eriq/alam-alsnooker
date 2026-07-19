@@ -176,6 +176,6 @@ if REDIS_URL:
     }
 
 CLUB_NAME = "عالم السنوكر"
-CLUB_LOCATION = "إربد - دوار السلطان"
-CLUB_WHATSAPP = os.getenv("CLUB_WHATSAPP", "962790000000")
-CLUB_OPENING_HOURS = "10:00 ص — 2:00 ص"
+CLUB_LOCATION = "الحي الشرقي، شارع الهاشمي / مقابل حلويات السلطان، إربد"
+CLUB_WHATSAPP = os.getenv("CLUB_WHATSAPP", "962790245899")
+CLUB_OPENING_HOURS = "مفتوح دائماً"
