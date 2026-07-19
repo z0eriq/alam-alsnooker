@@ -1,0 +1,22 @@
+# عالم السنوكر — Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+db.sqlite3
+media/
+staticfiles/
+*.egg-info/
+
+# Node
+node_modules/
+.next/
+out/
+.env.local
+*.log
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
