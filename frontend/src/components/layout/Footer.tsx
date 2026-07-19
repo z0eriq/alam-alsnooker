@@ -1,6 +1,6 @@
 "use client";
 
-import { Clock, Facebook, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Clock, ExternalLink, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -71,7 +71,7 @@ export function Footer() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-[#00AEEF] hover:text-[#5ccfff]"
           >
-            <Facebook className="size-4" />
+            <ExternalLink className="size-4" />
             صفحتنا على فيسبوك
           </a>
         </div>
